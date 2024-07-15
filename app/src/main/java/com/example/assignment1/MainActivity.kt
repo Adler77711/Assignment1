@@ -29,9 +29,12 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener{ view ->
 //code here
             when(language){
-                "English" -> resultTV.text = "Hello World"
-                "French" -> resultTV.text = "Bonjour à tous"
-                "Chinese" -> resultTV.text = "你好世界"
+                "English" -> { resultTV.text = "Hello World"
+                               button.text = "Confirm"}
+                "Français" -> {resultTV.text = "Bonjour à tous"
+                               button.text = "Confirmer"}
+                "中文" -> {resultTV.text = "你好世界"
+                               button.text = "确认"}
             }
         }
         spinnerLanguage.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
