@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         var language: String = "English"
         val resultTV: TextView = findViewById(R.id.tvResult)
         val spinnerLanguage : Spinner = findViewById(R.id.spLanguage)
-        var options = arrayOf("English","French","Chinese")
+        var options = arrayOf("English","Français","中文")
         spinnerLanguage.adapter = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,options)
         button.setOnClickListener{ view ->
 //code here
